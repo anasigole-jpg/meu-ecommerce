@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITA | Cafeteria Gourmet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="main-header">
+        <div class="logo-area">
+
+            <svg width="35" height="35" viewBox="0 0 100 100" fill="none" xmlns="http://w3.org" aria-hidden="true">
+                <circle cx="50" cy="50" r="45" stroke="#1A1A1A" stroke-width="6" />
+                <path d="M35 35L50 65L65 35" stroke="#1A1A1A" stroke-width="8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <span class="brand-name">VITA</span>
+        </div>
+
+
+        <nav class="nav-menu">
+            <a href="#">Grãos Especiais</a>
+            <a href="#">Cafeteiras</a>
+            <a href="#">Canecas</a>
+            <span class="search-icon" role="button" aria-label="Buscar">🔍</span>
+            <span class="cart-icon" role="button" aria-label="Carrinho de Compras">🛒</span>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="carousel-container">
+
+                <div class="carousel-slide">
+                    <img src="imagens/banner.jpeg" alt="Grãos selecionados com torras artesanais em exposição">
+                    <div class="slide-content">
+                        <h1>Grãos Especiais VITA</h1>
+                        <p>Torras artesanais feitas sob medida para o seu dia.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="imagens/prensa.avif" alt="Métodos de preparo e cafeteiras manuais de vidro e cerâmica">
+                    <div class="slide-content">
+                        <h1>Cafeteiras Manuais</h1>
+                        <p>Descubra o verdadeiro ritual e a extração perfeita do café coado.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="imagens/caneca.avif" Coleção exclusiva de canecas de cerâmica artesanal rústica">
+                    <div class="slide-content">
+                        <h1>Canecas de Cerâmica</h1>
+                        <p>Design escandinavo feito para abraçar a sua rotina.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="categorias">
+            <h2>Categorias em Destaque</h2>
+            <div class="categorias-container">
+
+                <div class="categoria-item">
+                    <div class="avatar-wrapper">
+                        <img src="imagens/pacote.avif" alt="Categoria Lançamentos - Pacotes novos de café gourmet"
+                            width="150" height="150">
+                    </div>
+                    <p>Lançamentos</p>
+                </div>
+
+                <div class="categoria-item">
+                    <div class="avatar-wrapper">
+                        <img src="imagens/prensa.avif" alt="Categoria Ofertas - Equipamentos de café em promoção"
+                            width="150" height="150">
+                    </div>
+                    <p>Ofertas</p>
+                </div>
+
+                <div class="categoria-item">
+                    <div class="avatar-wrapper">
+                        <img src="imagens/moedor.avif"
+                            alt="Categoria Acessórios - Filtros, colheres e suportes de preparo" width="150"
+                            height="150">
+                    </div>
+                    <p>Acessórios</p>
+                </div>
+
+                <div class="categoria-item">
+                    <div class="avatar-wrapper">
+                        <img src="imagens/caneca.avif" alt="Categoria Mais Vendidos - Itens favoritos dos clientes"
+                            width="150" height="150">
+                    </div>
+                    <p>Mais Vendidos</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="vitrine">
+            <h2>Vitrine de Produtos</h2>
+            <div class="vitrine-grid">
+
+
+                <article class="product-card">
+                    <figure class="product-image-container">
+                        <span class="badge-discount">-15%</span>
+                        <img src="imagens/pacote.avif"
+                            alt="Pacote de Café Especial Cerrado de 250g com grãos torrados artesanais" width="300"
+                            height="300" loading="lazy">
+                    </figure>
+                    <figcaption class="product-info">
+                        <h3>Café Origem Cerrado 250g</h3>
+                      <p class="price">R$ 58,00</p>
+                      <a href="produto.html" class="btn-action" style="text-decoration: none; display: block; text-align: center;">Comprar</a>
+
+                    </figcaption>
+                </article>
+
+
+                <article class="product-card">
+                    <figure class="product-image-container">
+                        <img src="imagens/prensa.avif"
+                            alt="Cafeteira prensa francesa feita de vidro borossilicato transparente e detalhes em inox"
+                            width="300" height="300" loading="lazy">
+                    </figure>
+                    <figcaption class="product-info">
+                        <h3>Prensa Francesa</h3>
+                        <p class="price">R$ 189,00</p>
+                        <button class="btn-action">Comprar</button>
+                    </figcaption>
+                </article>
+
+
+                <article class="product-card sold-out">
+                    <figure class="product-image-container">
+                        <span class="badge-sold-out">ESGOTADO</span>
+                        <img src="imagens/moedor.avif"
+                            alt="Moedor de café manual feito de madeira nobre escura e manivela metálica superior"
+                            width="300" height="300" loading="lazy">
+                    </figure>
+                    <figcaption class="product-info">
+                        <h3>Moedor Manual Madeira</h3>
+                        <p class="price-indisponivel">Indisponível</p>
+                        <button class="btn-action btn-notify">Avise-me</button>
+                    </figcaption>
+                </article>
+
+
+                <article class="product-card">
+                    <figure class="product-image-container">
+                        <img src="imagens/moedor.avif"
+                            alt="Caneca de cerâmica artesanal cinza fosco texturizada modelada à mão" width="300"
+                            height="300" loading="lazy">
+                    </figure>
+                    <figcaption class="product-info">
+                        <h3>Caneca Orgânica</h3>
+                        <p class="price">R$ 62,00</p>
+                        <button class="btn-action">Comprar</button>
+                    </figcaption>
+                </article>
+
+
+                <article class="product-card">
+                    <figure class="product-image-container">
+                        <img src="imagens/passador.avif"
+                            alt="Passador de café de vidro cônico no formato V60 para extração lenta de grãos especiais"
+                            width="300" height="300" loading="lazy">
+                    </figure>
+                    <figcaption class="product-info">
+                        <h3>Passador de Vidro V60</h3>
+                        <p class="price">R$ 145,00</p>
+                        <button class="btn-action">Comprar</button>
+                    </figcaption>
+                </article>
+
+
+                <article class="product-card">
+                    <figure class="product-image-container">
+                        <img src="imagens/copo2.jpeg"
+                            alt="Copo térmico de inox com pintura preta fosca e tampa acrílica vedadora" width="300"
+                            height="300" loading="lazy">
+                    </figure>
+                    <figcaption class="product-info">
+                        <h3>Copo Térmico Black Mate</h3>
+                        <p class="price">R$ 95,00</p>
+                        <button class="btn-action">Comprar</button>
+                    </figcaption>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-payments">
+                <span>Formas de Pagamento:</span>
+                <span class="payment-card">💳 Pix</span>
+                <span class="payment-card">💳 Cartão de Crédito</span>
+                <span class="payment-card">📄 Boleto</span>
+            </div>
+            <p class="copyright">&copy; 2026 VITA Cafés Especiais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
