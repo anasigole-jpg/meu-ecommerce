@@ -1,0 +1,263 @@
+/* Configurações Gerais da Página de Cadastro */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f7f4; /* Tom creme suave combinando com a identidade VITA */
+  color: #2c2420; /* Marrom café bem escuro para leitura */
+  line-height: 1.6;
+}
+
+/* Cabeçalho simples */
+.cabecalho {
+  background-color: #ffffff;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e0d8;
+}
+
+.cabecalho .logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #2c2420;
+  text-decoration: none;
+}
+
+.cabecalho .menu a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #4a3f38;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.cabecalho .menu a:hover {
+  color: #8c5a3c;
+}
+
+/* Container Principal */
+.container-cadastro {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 36px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(44, 36, 32, 0.06);
+}
+
+.container-cadastro h1 {
+  font-size: 1.8rem;
+  color: #2c2420;
+  margin-bottom: 8px;
+}
+
+.container-cadastro > p {
+  color: #6b5e55;
+  margin-bottom: 28px;
+  font-size: 0.95rem;
+}
+
+/* Estilização dos Blocos Semânticos (<fieldset> e <legend>) */
+fieldset {
+  border: 1px solid #dcd3c9;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 28px;
+  background-color: #fcfbf9;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #3d2b1f;
+  padding: 0 12px;
+  background-color: #ffffff;
+  border: 1px solid #dcd3c9;
+  border-radius: 4px;
+}
+
+/* Campos e Labels */
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.campo:last-child {
+  margin-bottom: 0;
+}
+
+.campo label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #3d2b1f;
+}
+
+/* Inputs de texto, email, tel, date, password e select */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  border: 1.5px solid #cfc5ba;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #2c2420;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Input de arquivo (Avatar) */
+input[type="file"] {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1.5px dashed #cfc5ba;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #4a3f38;
+  cursor: pointer;
+}
+
+/* =====================================================================
+   REQUISITO 3: ESTILIZAÇÃO AVANÇADA COM PSEUDO-CLASSES
+   ===================================================================== */
+
+/* 1. Estado :focus padrão (borda brilhante e outline personalizado) */
+input:focus,
+select:focus {
+  outline: 2px solid rgba(140, 90, 60, 0.25);
+  outline-offset: 2px;
+  border-color: #8c5a3c;
+  box-shadow: 0 0 8px rgba(140, 90, 60, 0.3);
+}
+
+/* 2. Feedback visual positivo (:focus:valid -> borda verde suave) */
+input:not([type="file"]):not([type="radio"]):not([type="checkbox"]):focus:valid,
+select:focus:valid {
+  border-color: #4caf50;
+  outline-color: rgba(76, 175, 80, 0.25);
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.35);
+}
+
+/* 3. Feedback visual de erro (:focus:invalid -> borda vermelha suave) */
+input:not([type="file"]):not([type="radio"]):not([type="checkbox"]):focus:invalid,
+select:focus:invalid {
+  border-color: #e57373;
+  outline-color: rgba(229, 115, 115, 0.25);
+  box-shadow: 0 0 8px rgba(229, 115, 115, 0.35);
+}
+
+/* =====================================================================
+   BLOCO 3: OPÇÕES DE PAGAMENTO COM ÍCONES
+   ===================================================================== */
+.opcao-pagamento {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  border: 1.5px solid #dcd3c9;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.opcao-pagamento:last-child {
+  margin-bottom: 0;
+}
+
+.opcao-pagamento:hover {
+  border-color: #8c5a3c;
+  background-color: #faf6f2;
+}
+
+.opcao-pagamento input[type="radio"] {
+  margin-right: 14px;
+  accent-color: #2c2420;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.opcao-pagamento label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #2c2420;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Checkbox dos Termos de Uso */
+.campo-termos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  font-size: 0.92rem;
+  color: #4a3f38;
+}
+
+.campo-termos input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #2c2420;
+  cursor: pointer;
+}
+
+/* Botão Principal de Envio (Estilo botões "COMPRAR" da VITA) */
+.btn-finalizar {
+  width: 100%;
+  padding: 16px;
+  background-color: #262322;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.1s ease;
+}
+
+.btn-finalizar:hover {
+  background-color: #4a3525;
+}
+
+.btn-finalizar:active {
+  transform: scale(0.99);
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85rem;
+  color: #7a6e65;
+  margin-top: 20px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  .container-cadastro {
+    margin: 20px 14px;
+    padding: 22px 18px;
+  }
+
+  fieldset {
+    padding: 16px;
+  }
+}

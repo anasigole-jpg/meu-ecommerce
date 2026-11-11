@@ -23,7 +23,120 @@
         </div>
     </header>
             
-    <main class="carrinho-main container-carrinho"></main>
+    <main class="carrinho-main container-carrinho">
+
+        <section class="tabela-carrinho-container">
+            <table class="tabela-itens">
+                <caption>Seus itens slecionados</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Produtos</th>
+                        <th scope="col">Preço Unitário</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr> 
+                         <td class="coluna-produto">
+                            <img src="imagens/pacote.avif" alt="Café Origem Cerrado" class="img-carrinho-thumb">
+                            <div class="produto-detalhes">
+                                <strong>Café Origem Cerrado 250g</strong>
+                                <span>Grãos Especiais</span>
+                            </div>
+                        </td>
+                        <td>R$ 49,30</td>
+                        <td>
+                            <input type="<input type="number" min="1" value="1" class="input-qtd">
+                        </td>
+                        <td>R$ 49,30</td>
+                        <td>
+                            <button type="button" class="btn-remover" title="Remover item">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="coluna-produto">
+                            <img src="imagens/prensa.avif" alt="Prensa Francesa" class="img-carrinho-thumb">
+                            <div class="produto-detalhes">
+                                <strong>Prensa Francesa Premium</strong>
+                                <span>Cafeteiras</span>
+                            </div>
+                        </td>
+                        <td>R$ 189,00</td>
+                        <td>
+                            <input type="number" min="1" value="1" class="input-qtd">
+                        </td>
+                        <td>R$ 189,00</td>
+                        <td>
+                            <button type="button" class="btn-remover" title="Remover item">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="coluna-produto">
+                            <img src="imagens/caneca.avif" alt="Caneca VITA Cerâmica" class="img-carrinho-thumb">
+                            <div class="produto-detalhes">
+                                <strong>Caneca VITA Artesanal</strong>
+                                <span>Canecas</span>
+                            </div>
+                        </td>
+                        <td>R$ 62,00</td>
+                        <td>
+                            <input type="number" min="1" value="1" class="input-qtd">
+                        </td>
+                        <td>R$ 62,00</td>
+                        <td>
+                            <button type="button" class="btn-remover" title="Remover item">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="aviso-frete">
+                            🎉 Parabéns! Você ganhou <strong>Frete Grátis</strong> nesta compra.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <aside class="order-summary">
+            <h3>Resumo do Pedido</h3>
+            
+            <div class="resumo-linha">
+                <span>Subtotal</span>
+                <strong>R$ 300,30</strong>
+            </div>
+            
+            <div class="resumo-linha">
+                <span>Valor do Frete</span>
+                <strong class="frete-gratis-txt">Grátis</strong>
+            </div>
+
+            <div class="cupom-container">
+                <label for="cupom">Cupom de Desconto</label>
+                <div class="cupom-input-group">
+                    <input type="text" id="cupom" placeholder="Digite seu cupom">
+                    <button type="button" class="btn-aplicar-cupom">Aplicar</button>
+                </div>
+            </div>
+
+            <div class="resumo-linha total-linha">
+                <span>Valor Total</span>
+                <strong>R$ 300,30</strong>
+            </div>
+
+            <a href="cadastro.html" class="btn-checkout">Finalizar Compra</a>
+        </aside>"
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
     
 </body>
 </html>
